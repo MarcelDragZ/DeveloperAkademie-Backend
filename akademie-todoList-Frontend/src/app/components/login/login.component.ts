@@ -23,10 +23,11 @@ export class LoginComponent {
 
   async login() {
     try {
-      let resp = await this.loginWithUserNameAndPasswort(
+      let resp: any = await this.loginWithUserNameAndPasswort(
         this.userName,
         this.password
       );
+      localStorage.setItem('token', resp.token);
       this.router.navigateByUrl('/todos');
     } catch (e) {
       console.error(e);
