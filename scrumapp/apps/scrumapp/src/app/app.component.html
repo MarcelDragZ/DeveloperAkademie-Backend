@@ -1,0 +1,24 @@
+<scrumapp-menu-menu
+  [toggleMenuInput]="toggledMenu"
+  (emitToggledMenu)="toggleMenu()"
+  *ngIf="router.url !== '/login' && router.url !== '/register'"
+/>
+
+<div (click)="toggleMenu()" class="fixed left-0 top-0 w-12 cursor-pointer">
+  <img
+    class="img-color"
+    *ngIf="
+      router.url !== '/login' && router.url !== '/register' && !toggledMenu
+    "
+    src="/assets/burger_menu.png"
+  />
+</div>
+
+<div
+  [class.ml-48]="
+    router.url !== '/login' && router.url !== '/register' && toggledMenu
+  "
+  [class.overflow-hidden]="toggledMenu"
+>
+  <router-outlet />
+</div>

@@ -1,0 +1,44 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2020", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@scrumapp/add-task": ["libs/add-task/src/index.ts"],
+      "@scrumapp/board/board": ["libs/board/board/src/index.ts"],
+      "@scrumapp/edit-task": ["libs/edit-task/src/index.ts"],
+      "@scrumapp/environments": ["libs/environments/environment.prod.ts"],
+      "@scrumapp/environments//timestamp": [
+        "libs/environments/timestamp/src/index.ts"
+      ],
+      "@scrumapp/environments/db": ["libs/environments/db/src/index.ts"],
+      "@scrumapp/environments/imagefilter": [
+        "libs/environments/imagefilter/src/index.ts"
+      ],
+      "@scrumapp/environments/services/auth-intercepter": [
+        "libs/environments/services/auth-intercepter/src/index.ts"
+      ],
+      "@scrumapp/home/home": ["libs/home/home/src/index.ts"],
+      "@scrumapp/imprint/imprint": ["libs/imprint/imprint/src/index.ts"],
+      "@scrumapp/login/login": ["libs/login/login/src/index.ts"],
+      "@scrumapp/menu/menu": ["libs/menu/menu/src/index.ts"],
+      "@scrumapp/profile/profile": ["libs/profile/profile/src/index.ts"],
+      "@scrumapp/register/register": ["libs/register/register/src/index.ts"],
+      "@scrumapp/shell/shell": ["libs/shell/shell/src/index.ts"],
+      "@scrumapp/user/user": ["libs/user/user/src/index.ts"],
+      "@scrumapp/welcome/welcome": ["libs/welcome/welcome/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}
