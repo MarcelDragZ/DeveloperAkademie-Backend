@@ -1,0 +1,52 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2020", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@videoflix/data-protection": ["libs/data-protection/src/index.ts"],
+      "@videoflix/detail-preview": ["libs/detail-preview/src/index.ts"],
+      "@videoflix/environments": ["libs/environments/environment.ts"],
+      "@videoflix/environments//timestamp": [
+        "libs/environments/timestamp/src/index.ts"
+      ],
+      "@videoflix/environments/db": ["libs/environments/db/src/index.ts"],
+      "@videoflix/environments/imagefilter": [
+        "libs/environments/imagefilter/src/index.ts"
+      ],
+      "@videoflix/environments/services/auth-intercepter": [
+        "libs/environments/services/auth-intercepter/src/index.ts"
+      ],
+      "@videoflix/footer": ["libs/footer/src/index.ts"],
+      "@videoflix/forgot-password": ["libs/forgot-password/src/index.ts"],
+      "@videoflix/home": ["libs/home/src/index.ts"],
+      "@videoflix/imprint/imprint": ["libs/imprint/imprint/src/index.ts"],
+      "@videoflix/login/login": ["libs/login/login/src/index.ts"],
+      "@videoflix/menu/menu": ["libs/menu/menu/src/index.ts"],
+      "@videoflix/my-list": ["libs/my-list/src/index.ts"],
+      "@videoflix/new-password": ["libs/new-password/src/index.ts"],
+      "@videoflix/preview": ["libs/preview/src/index.ts"],
+      "@videoflix/register-confirmation": [
+        "libs/register-confirmation/src/index.ts"
+      ],
+      "@videoflix/register/register": ["libs/register/register/src/index.ts"],
+      "@videoflix/small-preview": ["libs/small-preview/src/index.ts"],
+      "@videoflix/upload": ["libs/upload/src/index.ts"],
+      "@videoflix/video-list": ["libs/video-list/src/index.ts"],
+      "@videoflix/video-player": ["libs/video-player/src/index.ts"],
+      "@videoflix/videos": ["libs/videos/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}
